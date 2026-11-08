@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <title>Grade 10 Science | Quarter 3: Chemical Reactions</title>
+  <style>
+    :root { color-scheme: dark; --navy:#102a43; --blue:#1d4ed8; --cyan:#67e8f9; --cream:#f8fafc; --ink:#102a43; --gold:#fbbf24; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#071827; color:var(--cream); font:clamp(16px,2vw,22px)/1.5 system-ui,-apple-system,Segoe UI,sans-serif; }
+    .deck { min-height:100vh; display:grid; place-items:center; padding:24px 24px 90px; }
+    .slide { display:none; width:min(100%,1000px); min-height:min(70vh,680px); padding:clamp(28px,6vw,72px); border:1px solid #ffffff25; border-radius:28px; background:radial-gradient(circle at 90% 10%,#1d4ed855,transparent 35%),linear-gradient(145deg,#102a43,#123b55); box-shadow:0 24px 80px #0006; }
+    .slide.active { display:flex; flex-direction:column; justify-content:center; animation:appear .24s ease-out; }
+    @keyframes appear { from { opacity:.4; transform:translateY(8px) } to { opacity:1; transform:none } }
+    h1,h2 { line-height:1.08; margin:0 0 .45em; letter-spacing:-.03em; }
+    h1 { font-size:clamp(2.5rem,7vw,5.5rem); }
+    h2 { font-size:clamp(2rem,5vw,3.8rem); }
+    h3 { margin:.3em 0; color:var(--cyan); }
+    p { max-width:76ch; }
+    .eyebrow { color:var(--cyan); font-weight:800; letter-spacing:.14em; text-transform:uppercase; font-size:.8em; }
+    .lead { font-size:1.25em; color:#dbeafe; }
+    .tag { display:inline-block; border:1px solid #67e8f988; color:var(--cyan); border-radius:999px; padding:.35em .8em; font-size:.8em; font-weight:700; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; margin-top:18px; }
+    .card { padding:18px; border-radius:18px; background:#ffffff12; border:1px solid #ffffff20; }
+    .card p { margin:.35em 0 0; }
+    ul { padding-left:1.2em; }
+    li { margin:.45em 0; }
+    .big { font-size:clamp(2rem,6vw,4rem); font-weight:900; color:var(--gold); }
+    .equation { margin:22px 0; padding:20px; border-radius:18px; background:#061624; text-align:center; font-size:clamp(1.3rem,4vw,2.4rem); font-weight:800; color:var(--cyan); }
+    .note { border-left:4px solid var(--gold); padding:10px 16px; background:#ffffff0d; }
+    .controls { position:fixed; bottom:0; left:0; right:0; display:flex; align-items:center; justify-content:center; gap:14px; padding:14px; background:#071827ee; backdrop-filter:blur(12px); }
+    button { font:inherit; font-weight:700; color:white; background:#1d4ed8; border:0; border-radius:12px; padding:10px 18px; cursor:pointer; }
+    button:hover { background:#2563eb; } button:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
+    button:disabled { opacity:.45; cursor:not-allowed; }
+    #counter { min-width:90px; text-align:center; font-variant-numeric:tabular-nums; }
+    #progress { position:fixed; top:0; left:0; height:5px; background:var(--cyan); transition:width .2s; }
+    .small { font-size:.78em; color:#cbd5e1; }
+    @media print { body { background:white; color:#102a43; } .deck { display:block; padding:0; } .slide,.slide.active { display:flex !important; color:#102a43; background:white; border:1px solid #aaa; box-shadow:none; min-height:95vh; page-break-after:always; } .controls,#progress { display:none; } .card,.equation,.note { background:#f1f5f9; color:#102a43; } }
+  </style>
+</head>
+<body>
+  <div id="progress" aria-hidden="true"></div>
+  <main class="deck" aria-live="polite">
+    <section class="slide active" aria-label="Slide 1">
+      <p class="eyebrow">Grade 10 Science · Quarter 3</p>
+      <h1>Reactions<br>all around us</h1>
+      <p class="lead">A first look at chemical reactions—and the acids, bases, and salts we will meet along the way.</p>
+      <span class="tag">Kick-off lesson · Let’s get curious</span>
+    </section>
+    <section class="slide" aria-label="Slide 2">
+      <p class="eyebrow">Our big question</p><h2>How can we tell when matter changes?</h2>
+      <div class="grid"><div class="card"><h3>Notice</h3><p>What changes in color, temperature, bubbles, or form?</p></div><div class="card"><h3>Explain</h3><p>What might be happening to the particles?</p></div><div class="card"><h3>Connect</h3><p>Where do we see useful reactions in daily life?</p></div></div>
+    </section>
+    <section class="slide" aria-label="Slide 3">
+      <p class="eyebrow">Quarter 3 · the journey</p><h2>Our learning roadmap</h2>
+      <p class="note"><strong>Teacher note:</strong> This is a starter roadmap, not a quotation of the official guide. Replace or reorder these themes to match your Teacher Guide and school pacing.</p>
+      <div class="grid"><div class="card"><h3>1 · Acids, bases & salts</h3><p>Recognize common properties, indicators, and everyday examples.</p></div><div class="card"><h3>2 · Reaction evidence</h3><p>Observe signs that a chemical change may have occurred.</p></div><div class="card"><h3>3 · Equations & patterns</h3><p>Represent reactions and explore reaction patterns.</p></div><div class="card"><h3>4 · Matter & reactions</h3><p>Connect chemical change with atoms and conservation of matter.</p></div></div>
+    </section>
+    <section class="slide" aria-label="Slide 4">
+      <p class="eyebrow">Learning goals · draft for today</p><h2>By the end, we can…</h2>
+      <ul><li>Describe familiar properties of acids and bases.</li><li>Explain how indicators help us classify substances.</li><li>Give examples of acids, bases, and salts in everyday life.</li><li>Describe neutralization using a simple word or symbol equation.</li><li>Ask questions and make observations safely.</li></ul>
+      <p class="small">Align these draft goals with the exact learning competencies in your Teacher Guide before presenting them as official competencies.</p>
+    </section>
+    <section class="slide" aria-label="Slide 5">
+      <p class="eyebrow">Start with what you know</p><h2>Where have you heard “acid”?</h2>
+      <div class="grid"><div class="card"><h3>Food</h3><p>Lemon juice and vinegar contain acids.</p></div><div class="card"><h3>Our bodies</h3><p>Stomach fluid is acidic and helps digestion.</p></div><div class="card"><h3>Products</h3><p>Some cleaners and batteries involve acidic or basic substances.</p></div></div>
+      <p class="note">Turn and talk: Which examples have you encountered? What do you already think “acidic” means?</p>
+    </section>
+    <section class="slide" aria-label="Slide 6">
+      <p class="eyebrow">Acids</p><h2>What is an acid?</h2>
+      <p class="lead">In water, acids increase the concentration of hydrogen ions (H<sup>+</sup>). Many acids have a pH below 7.</p>
+      <div class="grid"><div class="card"><h3>Examples</h3><p>Citric acid in citrus fruits; acetic acid in vinegar; hydrochloric acid in gastric juice.</p></div><div class="card"><h3>Indicators</h3><p>Blue litmus paper typically turns red in an acidic solution.</p></div></div>
+      <p class="small">Never identify a substance by tasting it. Some acids are corrosive and hazardous.</p>
+    </section>
+    <section class="slide" aria-label="Slide 7">
+      <p class="eyebrow">Bases</p><h2>What is a base?</h2>
+      <p class="lead">Many bases increase hydroxide ions (OH<sup>−</sup>) in water. Basic (alkaline) solutions have a pH above 7.</p>
+      <div class="grid"><div class="card"><h3>Examples</h3><p>Baking soda solution and some household cleaners are basic. (Products vary—check labels.)</p></div><div class="card"><h3>Indicators</h3><p>Red litmus paper typically turns blue in a basic solution.</p></div></div>
+      <p class="small">Bases can also be corrosive. Never touch, mix, or test household chemicals in class.</p>
+    </section>
+    <section class="slide" aria-label="Slide 8">
+      <p class="eyebrow">The pH scale</p><h2>A scale for acidity</h2>
+      <div class="equation">0 &nbsp; acidic &nbsp; ← &nbsp; 7 neutral &nbsp; → &nbsp; basic &nbsp; 14</div>
+      <p>pH is a scale related to hydrogen-ion concentration. Lower pH means more acidic; higher pH means more basic. The scale is logarithmic, so a one-unit change is significant.</p>
+      <p class="note">Pure water is near pH 7 at room temperature. Real solutions can have different pH values; indicators give clues, not always an exact measurement.</p>
+    </section>
+    <section class="slide" aria-label="Slide 9">
+      <p class="eyebrow">When acids and bases react</p><h2>Neutralization can make a salt</h2>
+      <p class="lead">A typical acid–base neutralization produces water and an ionic compound called a salt.</p>
+      <div class="equation">acid + base → salt + water</div>
+      <p><strong>Example:</strong> hydrochloric acid + sodium hydroxide → sodium chloride + water.</p>
+      <div class="equation">HCl + NaOH → NaCl + H<sub>2</sub>O</div>
+      <p class="small">This is a simplified example. The exact products depend on the reactants and conditions.</p>
+    </section>
+    <section class="slide" aria-label="Slide 10">
+      <p class="eyebrow">Salts are more than table salt</p><h2>What do chemists mean by “salt”?</h2>
+      <p>A salt is an ionic compound formed from positive and negative ions. Sodium chloride (table salt) is one familiar example; many other salts exist.</p>
+      <div class="grid"><div class="card"><h3>Everyday connections</h3><p>Salts are found in foods, minerals, and many useful materials.</p></div><div class="card"><h3>Key idea</h3><p>“Salt” in chemistry does not mean only the seasoning in a salt shaker.</p></div></div>
+    </section>
+    <section class="slide" aria-label="Slide 11">
+      <p class="eyebrow">Think like a scientist</p><h2>Quick check</h2>
+      <ol><li>A solution has pH 3. Is it acidic, neutral, or basic?</li><li>Which indicator color change suggests an acid with blue litmus?</li><li>In a typical neutralization, what two kinds of products form?</li><li>Why should we never taste an unknown substance?</li></ol>
+      <p class="note"><strong>Discuss:</strong> 1) Acidic. 2) Blue litmus turns red. 3) A salt and water. 4) Unknown substances may be harmful.</p>
+    </section>
+    <section class="slide" aria-label="Slide 12">
+      <p class="eyebrow">Looking ahead</p><h2>Our questions launch the quarter</h2>
+      <ul><li>How do we identify acids and bases safely?</li><li>What evidence shows that a chemical reaction happened?</li><li>How can we represent reactions and account for matter?</li></ul>
+      <p class="lead">Exit ticket: Write one new idea, one question, and one real-life example you want to explore.</p>
+      <span class="tag">Next: Lesson 1 · Acids, bases, and salts</span>
+    </section>
+  </main>
+  <nav class="controls" aria-label="Presentation controls">
+    <button id="prev" type="button" aria-label="Previous slide">← Previous</button>
+    <span id="counter" aria-live="polite">1 / 12</span>
+    <button id="next" type="button" aria-label="Next slide">Next →</button>
+    <button id="print" type="button" title="Print or save slides as PDF">Print / PDF</button>
+  </nav>
+  <script>
+    const slides = [...document.querySelectorAll('.slide')];
+    const counter = document.getElementById('counter');
+    const progress = document.getElementById('progress');
+    let current = 0;
+    function show(index) {
+      current = Math.max(0, Math.min(slides.length - 1, index));
+      slides.forEach((slide, i) => { slide.classList.toggle('active', i === current); slide.setAttribute('aria-hidden', i === current ? 'false' : 'true'); });
+      counter.textContent = `${current + 1} / ${slides.length}`;
+      progress.style.width = `${((current + 1) / slides.length) * 100}%`;
+      document.getElementById('prev').disabled = current === 0;
+      document.getElementById('next').disabled = current === slides.length - 1;
+    }
+    document.getElementById('prev').addEventListener('click', () => show(current - 1));
+    document.getElementById('next').addEventListener('click', () => show(current + 1));
+    document.getElementById('print').addEventListener('click', () => window.print());
+    document.addEventListener('keydown', event => {
+      if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(current + 1); }
+      if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); show(current - 1); }
+      if (event.key === 'Home') show(0);
+      if (event.key === 'End') show(slides.length - 1);
+    });
+    show(0);
+  </script>
+</body>
+</html>
